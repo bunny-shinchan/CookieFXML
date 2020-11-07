@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vermsudh.CookieFXMLController">
+    <top>
+        <GridPane>
+       <Label text="Select Cookie:" />
+       <ComboBox fx:id="comboBox" GridPane.rowIndex="0"   GridPane.columnIndex="2"  GridPane.columnSpan="2" />
+        </GridPane>
+    </top>
+    <center>
+        <GridPane>
+             <Label text="Enter Quantity Sold:" GridPane.rowIndex="0"   GridPane.columnIndex="1"/>
+            
+             <Label text="Enter Quantity Baked:" GridPane.rowIndex="0"   GridPane.columnIndex="2"/>
+             <TextField fx:id="qtySold" GridPane.rowIndex="1"  GridPane.columnIndex="1" />
+             <TextField fx:id="qtyBaked"  GridPane.rowIndex="1"  GridPane.columnIndex="2" />
+             <Button fx:id="sellbtn" onAction="#sellButtonAction" mnemonicParsing="true"  text="_Sell" maxWidth="Infinity" maxHeight="Infinity" GridPane.rowIndex="2"  GridPane.columnIndex="1" />
+             <Button fx:id="addbtn" onAction="#addButtonAction"  mnemonicParsing="true"  text="_Add" maxWidth="Infinity" maxHeight="Infinity" GridPane.rowIndex="2"  GridPane.columnIndex="2" />
+
+        </GridPane>
+    </center>
+    <bottom>
+        <BorderPane>
+           <right>
+       <Button fx:id="exitbtn" mnemonicParsing="true" onAction="#CloseButtonAction" text="E_xit" GridPane.rowIndex="2"  GridPane.columnIndex="2" />
+           </right>
+        </BorderPane>
+    </bottom>
+</BorderPane>
